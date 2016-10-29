@@ -51,6 +51,8 @@ public class RecoderProgress extends View {
         bfProgressColor = a.getColor(R.styleable.RecoderProgress_bf_progress_color, bfProgressColor);
         maxRecoderTime = a.getInteger(R.styleable.RecoderProgress_max_recoder_time,maxRecoderTime);
         minRecoderTime = a.getInt(R.styleable.RecoderProgress_min_recoder_time,minRecoderTime);
+        a.recycle();
+
 
         init(context);
     }
